@@ -1,0 +1,28 @@
+<div class="page-header header-filter" data-parallax="true" style="background-image:url('http://wallpapere.org/wp-content/uploads/2012/02/black-and-white-city-night.png');"></div>
+<div class="main main-raised">
+    <div class="profile-content">
+        <div class="containers">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                   <div class="profiles">
+                        <div class="name-detailblog" *ngIf="data != undefined">
+                          <br><br><br>
+                            <h2 class="title">{{ data.title }}</h2>
+                            <br><br><br>
+                            <h3 class="title">{{ data.author }}</h3>
+                            <!-- <h3 class="date">{{ detailblog.created_at | date: "dd MMM yyyy hh:mm" }}</h3> -->
+                            <h3 class="date">{{ data.created_at }}</h3>
+                            <img src="{{ data.image_url }}" alt="img">
+                            <div class="text-left">
+                                <!-- <p class="textcontent">[innerHTML]="detailblog.content"</p> -->
+                                <p class="textcontent">{{ data.content }}</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

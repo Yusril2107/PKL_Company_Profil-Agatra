@@ -1,0 +1,34 @@
+<div class="page-header header-filter" data-parallax="true" style="background-image:url('http://wallpapere.org/wp-content/uploads/2012/02/black-and-white-city-night.png');"></div>
+<div class="main main-raised">
+
+
+ <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Company Portofolio</h1>
+      </div>
+      <div class="all-projects" *ngFor="let post of posts">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>{{ post.title }}</h1>
+            <!-- <h2>MRT Jakarta</h2> -->
+            <p>{{post.description}}</p>
+          </div>
+          <div class="project-img" style="padding: 70px; background-color: white;">
+            <img style="width: 100%;" src="{{ post.image_url }}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>{{ post.title }}</h1>
+            <!-- <h2>MRT Jakarta</h2> -->
+            <p>{{post.description}}</p>
+          </div>
+          <div class="project-img" style="padding: 70px; background-color: white;">
+            <img src="{{ post.image_url }}" alt="img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>

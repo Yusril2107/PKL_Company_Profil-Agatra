@@ -1,0 +1,255 @@
+<section id="hero">
+    <div class="hero container">
+        <div class="texthero">
+            <h1>Welcome to <span></span></h1>
+            <h1>Agatra <span></span></h1>
+            <h1>Teknologi <span></span></h1>
+            <a type="button" class="cta" style="color: white;">Button</a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about container">
+        <div class="col-left">
+            <div class="about-img">
+                <img src="https://source.unsplash.com/634x951/?group" alt="img">
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="section-title">About Us</h1>
+            <h2>IT Services and IT Consultants</h2>
+            <p>Agatra is one of the few IT system integration, professional service and software development companies in Bandung
+            repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
+            exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
+            Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
+            reprehenderit libero enim!</p>
+            <a routerLink="detailportofolio" class="cta" style="text-decoration: none;">Portofolio</a>
+        </div>
+    </div>
+</section>
+
+<section id="services" style="background-color: #FE6700;">
+    <div class="servicess container">
+        <div class="service-tops">
+            <h1 class="section-title">Our Client</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
+            magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
+            voluptatum explicabo!</p>
+        </div>
+    </div>
+    <div class="containerourteam">
+        <input type="radio" name="dot" id="ones">
+        <input type="radio" name="dot" id="twos">
+        <div class="main-card">
+            <div class="cards" *ngFor="let post of posts">
+                <a [routerLink]="['/detailclient', post.id]">
+                    <div class="card">
+                      <!-- <svg xmlns"{{ post.image_url }}"></svg> -->
+                      <img style="height: 100%;
+                      width: 100%;
+                      border: 3px solid #ffff;
+                      object-fit: cover; height: 130px;
+                    width: 130px;
+                    border-radius: 50%;
+                    padding: 3px;
+                    background: #FE6700;
+                    margin-bottom: 14px;" src="{{ post.image_url }}" alt="img" />
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="buttons">
+            <label for="ones" class=" active ones"></label>
+            <label for="twos" class="twos"></label>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="services container">
+        <div class="service-tops">
+            <h1 class="section-title">Our Teams</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
+            magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
+            voluptatum explicabo!</p>
+        </div>
+    </div>
+    <div class="containerourteam">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-card">
+            <div class="cards">
+                <a routerLink="detailourteam">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="https://source.unsplash.com/350x300/?face" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Name In here</div>
+                                <div class="job">Job In here</div>
+                            </div>
+                            <div class="media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="https://source.unsplash.com/350x300/?face" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Jasmine Carter</div>
+                                <div class="job">UI Designer</div>
+                            </div>
+                            <div class="media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="https://source.unsplash.com/350x300/?face" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Justin Chung</div>
+                                <div class="job">Web Devloper</div>
+                            </div>
+                            <div class="media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cards">
+                <a href="#">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="https://source.unsplash.com/350x300/?face" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Appolo Reef</div>
+                                <div class="job">Web Designer</div>
+                            </div>
+                            <div class="media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="https://source.unsplash.com/350x300/?face" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Adrina Calvo</div>
+                                <div class="job">UI Designer</div>
+                            </div>
+                            <div class="media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="https://source.unsplash.com/350x300/?face" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="name">Nicole Lewis</div>
+                                <div class="job">Web Devloper</div>
+                            </div>
+                            <div class="media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="button">
+            <label for="one" class=" active one"></label>
+            <label for="two" class="two"></label>
+        </div>
+    </div>
+</section>

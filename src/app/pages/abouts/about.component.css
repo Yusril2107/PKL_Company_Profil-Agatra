@@ -1,0 +1,57 @@
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  position: relative;
+  z-index: 1;
+  top: 0px;
+}
+
+.container{
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  left: 170px;
+  width: auto;
+}
+
+.container p{
+  font-size: 20px;
+}
+
+.title h1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  letter-spacing: 0.1em;
+}
+
+.title h1:nth-child(2){
+  color: #F48B29;
+}
+
+.second{
+  position: absolute;
+  z-index: 2;
+  top: 1030px;
+  left: 790px;
+  width: 40%;
+}
+
+.third{
+  position: absolute;
+  z-index: 2;
+  top: 1950px;
+  width: 40%;
+}
+
+.fourth{
+  position: absolute;
+  z-index: 2;
+  top: 2900px;
+  left: 790px;
+  width: 40%;
+}
+

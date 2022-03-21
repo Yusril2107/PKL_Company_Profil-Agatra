@@ -1,0 +1,204 @@
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+.title p{
+  font-size: 20px;
+}
+
+.one{
+  background-image: url("/assets/img/bgsecond.svg");
+  height: 738px;
+  width: auto;
+}
+
+.container{
+  position: absolute;
+  z-index: 2;
+  top: 240px;
+  left: 200px;
+  width: auto;
+}
+
+.title h1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  letter-spacing: 0.1em;
+}
+
+.title h1:nth-child(2){
+  color: #F48B29;
+}
+
+select {
+	appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.containerrr {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 150px 1.5rem;
+}
+
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form{
+	background-color: #FBEFBF;
+}
+
+.my-form h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+}
+
+.my-form .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
+    no-repeat center left / 15px 15px;
+  padding-left: 20px;
+}
+
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+.my-form .containerrr ul li:nth-child(5) {
+	margin-bottom: 0;
+}
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  color: black;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid black;
+  background: rgb(223, 208, 208);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+  height: 170px;
+}
+
+.my-form ::-moz-placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1;
+}
+
+.my-form :-ms-input-placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1;
+}
+
+.my-form ::placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus + label {
+  background: #FE6700;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02);
+}
+
+.my-form *:required,
+.my-form select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+}
+
+.my-form *:required {
+  color: black;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
+}
+
+.my-form select {
+  color: black;
+  background-image: url();
+}
+
+/* FORM BTNS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.my-form button {
+  font-weight: bold;
+}
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 600px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .my-form .required-msg {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    top: 250px;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container{
+    top: 220px;
+    left: 80px;
+  }
+
+  .title h1{
+    font-size: 45px;
+  }
+}

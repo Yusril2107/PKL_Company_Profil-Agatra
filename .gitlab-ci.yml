@@ -1,0 +1,19 @@
+variables:
+  APP_DIR: "/var/www/agatrafe"
+
+deploying_staging:
+  only:
+    - dev
+  stage: deploy
+  tags:
+    - dev
+  script:
+    - echo "Deployed"
+    - git log -1
+    - pwd
+    - rm ./package-lock.json
+    - npm install
+    - node --max-old-space-size=8192 node_modules/@angular/cli/bin/ng build --configuration=dev --base-href ./
+    - sudo rsync -av --delete --exclude-from '/home/gitlab-runner/exclude-angular.txt'  $CI_PROJECT_DIR/./dist/ $APP_DIR
+    - sudo chmod -R 777 $APP_DIR
+    - echo "Deployed Finish"

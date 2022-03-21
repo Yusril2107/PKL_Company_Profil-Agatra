@@ -1,0 +1,68 @@
+<section class="container-fluid one">
+    <div class="container d-flex flex-column m-0 p-0">
+        <div class="title d-flex flex-column">
+            <h1>Update</h1>
+            <h1>Blog</h1>
+            <h1>And Report</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
+</section>
+
+<!--
+<section class="container-fluid blog">
+  <div class="band" *ngFor="let post of posts">
+    <div class="item-2" >
+      <a [routerLink]="['/detailblog', post.id]" class="card">
+        <div class="thumb">
+          <img src="{{ post.image_url }}" alt="img">
+        </div>
+        <article>
+          <h1>{{ post.title }}</h1>
+          <p>{{ post.highlight }}</p>
+          <span>{{ post.author }}</span>
+        </article>
+        <a routerLink="detailblog/{{post.id}}" class="load">Read More</a>
+      </a>
+    </div>
+
+      <div class="item-2" >
+      <a href="#" class="card">
+
+        <div class="thumb">
+          <img src="{{ d.image_url }}" alt="img">
+        </div>
+        <article>
+          <h1>{{ d.title }}</h1>
+          <p>{{ d.highlight }}</p>
+          <span>{{ d.author }}</span>
+
+          <a routerLink="detailblog/{{d.id}}" class="load">Read More</a>
+        </article>
+      </a>
+    </div>
+
+  </div>
+  <button class="load">Load More</button>
+</section>
+-->
+<div class="container-fluid blogpage">
+
+  <h1 class="section-title">News <span>Blog</span></h1>
+
+  <div class="row">
+
+    <div *ngFor="let post of posts" class="col-lg-3 mb-3">
+
+      <div class="box">
+        <img src="{{ post.image_url }}" width="100%" class="img">
+        <h5 class="title"> {{ post.title }} </h5>
+        <p class="author">{{ post.author }}</p>
+        <p class="highlight">{{ post.highlight }}</p>
+        <a routerLink="detailblog/{{ post.id }}" class="btn btn-dark btn-sm">Read More</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>    
